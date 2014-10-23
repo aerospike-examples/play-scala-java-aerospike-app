@@ -10,3 +10,18 @@ ASPlugin started
 2014-10-23 13:53:14,765 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
+2014-10-23 14:05:16,866 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster closed!
+
+2014-10-23 14:05:16,867 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin stopped
+
+2014-10-23 14:05:16,895 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster established!
+
+2014-10-23 14:05:16,895 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin started
+
+2014-10-23 14:05:16,899 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
