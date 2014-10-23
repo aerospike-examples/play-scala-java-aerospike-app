@@ -1,0 +1,29 @@
+@import helper._
+
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>@title</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <script src="@routes.Assets.at("javascripts/main.js")" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="text-center">
+      <h2>Yet Another To-Do App</h2>
+      <h6>But, this one is built using JASPS - Java Aerospike Play and Scala </h6>
+    </div>
+    <section class="main-content">
+    	@content
+    </section>
+  </body>
+</html>

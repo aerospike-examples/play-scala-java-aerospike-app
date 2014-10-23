@@ -1,0 +1,57 @@
+@(connected: Boolean)(status: String)(todos: Map[String, String])
+
+@main("JASPS") {
+
+	<div class="container">
+
+		@if(connected) {
+
+		  <div>
+		    <!-- input -->
+		    @helper.form( action = routes.Application.createTodo() ) {
+		      <div class="row">
+		        <div class="input-group">
+		          <input type="text" placeholder="What do you want To-Do?" class="form-control" name="todo">
+		          <span class="input-group-btn">
+		            <input type="submit" class="btn btn-primary" value="Add">
+		          </span>
+		        </div>
+		        <div class="form-group has-error text-center">
+		          <p class="help-block"></p>
+		        </div>
+		      </div>
+		    }
+		  </div>
+
+		  <h3>Your To-Dos</h3>
+
+		  <div>
+		  	@if(todos.size > 0)	{
+					@for((k, v) <- todos) {
+		        @helper.form( action = routes.Application.deleteTodo() ) {
+					    <p class="input-group">
+					      <input type="text" class="form-control" disabled=disabled value="@v">
+					      <span class="input-group-btn">
+				        	<input type="hidden" name="todoKey" value="@k">
+				        	<button class="btn btn-danger" aria-label="Remove">X</button>
+					      </span>
+					    </p>
+	        	}
+					}
+		  	} else	{
+		  		<p class="text-muted">None &mdash; seems like you're all caught up!</p>
+		  	}
+		  </div>
+
+		} else {
+
+			<div class="text-center">
+			  <h3>Oops!</h3>
+			  <h4>@status</h4>
+		  </div>
+
+		}
+
+	</div>
+
+}

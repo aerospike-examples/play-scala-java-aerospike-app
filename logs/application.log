@@ -1,0 +1,150 @@
+2014-10-22 15:42:41,264 - [INFO] - from play in pool-4-thread-7 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-10-22 15:42:42,153 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster established!
+
+2014-10-22 15:42:42,153 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin started
+
+2014-10-22 15:42:42,224 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-10-22 15:43:13,341 - [ERROR] - from application in New I/O worker #2 
+
+
+! @6k1978llh - Internal server error, for (POST) [/createTodo] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.5.jar:2.3.5]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.5.jar:2.3.5]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2014-10-22 15:43:23,946 - [ERROR] - from application in New I/O worker #2 
+
+
+! @6k1979bdk - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.5.jar:2.3.5]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.5.jar:2.3.5]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2014-10-22 15:43:31,477 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster closed!
+
+2014-10-22 15:43:31,478 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin stopped
+
+2014-10-22 15:43:31,510 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster established!
+
+2014-10-22 15:43:31,511 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin started
+
+2014-10-22 15:43:31,514 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-10-22 17:31:55,738 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster closed!
+
+2014-10-22 17:31:55,738 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin stopped
+
+2014-10-22 17:31:56,763 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster established!
+
+2014-10-22 17:31:56,764 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin started
+
+2014-10-22 17:31:56,768 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-10-22 17:32:43,262 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin stopped
+
+2014-10-22 17:32:43,282 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster established!
+
+2014-10-22 17:32:43,282 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin started
+
+2014-10-22 17:32:43,285 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-10-22 17:32:53,507 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin stopped
+
+2014-10-22 17:32:53,530 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster established!
+
+2014-10-22 17:32:53,530 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin started
+
+2014-10-22 17:32:53,533 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-10-22 19:07:26,817 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster closed!
+
+2014-10-22 19:07:26,818 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin stopped
+
+2014-10-22 19:07:26,838 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster established!
+
+2014-10-22 19:07:26,839 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin started
+
+2014-10-22 19:07:26,843 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-10-22 20:12:42,620 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster closed!
+
+2014-10-22 20:12:42,620 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin stopped
+
+2014-10-22 20:12:42,647 - [DEBUG] - from application in play-internal-execution-context-1 
+Connection to Aerospike cluster established!
+
+2014-10-22 20:12:42,647 - [INFO] - from application in play-internal-execution-context-1 
+ASPlugin started
+
+2014-10-22 20:12:42,651 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
