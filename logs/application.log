@@ -1,39 +1,12 @@
-2014-10-23 12:44:35,712 - [INFO] - from play in pool-4-thread-1 
+2014-10-23 13:52:56,842 - [INFO] - from play in pool-4-thread-1 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2014-10-23 12:52:14,784 - [DEBUG] - from application in play-internal-execution-context-1 
+2014-10-23 13:53:14,696 - [DEBUG] - from application in play-internal-execution-context-1 
 Connection to Aerospike cluster established!
 
-2014-10-23 12:52:14,784 - [INFO] - from application in play-internal-execution-context-1 
+2014-10-23 13:53:14,697 - [INFO] - from application in play-internal-execution-context-1 
 ASPlugin started
 
-2014-10-23 12:52:14,888 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2014-10-23 12:56:44,224 - [INFO] - from application in play-internal-execution-context-1 
-ASPlugin stopped
-
-2014-10-23 12:56:44,260 - [DEBUG] - from application in play-internal-execution-context-1 
-Connection to Aerospike cluster established!
-
-2014-10-23 12:56:44,261 - [INFO] - from application in play-internal-execution-context-1 
-ASPlugin started
-
-2014-10-23 12:56:44,264 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2014-10-23 13:04:36,631 - [DEBUG] - from application in play-internal-execution-context-1 
-Connection to Aerospike cluster closed!
-
-2014-10-23 13:04:36,631 - [INFO] - from application in play-internal-execution-context-1 
-ASPlugin stopped
-
-2014-10-23 13:04:36,662 - [DEBUG] - from application in play-internal-execution-context-1 
-Connection to Aerospike cluster established!
-
-2014-10-23 13:04:36,662 - [INFO] - from application in play-internal-execution-context-1 
-ASPlugin started
-
-2014-10-23 13:04:36,666 - [INFO] - from play in play-internal-execution-context-1 
+2014-10-23 13:53:14,765 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

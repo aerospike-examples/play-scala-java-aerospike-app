@@ -73,6 +73,7 @@ public class Application extends Controller {
 			int todoCount = (Integer) userRecord.getValue("todocount");
 
 			//	Create new To-Do
+			// NOTE: the todoId is format <newuser>:# so that we can initiate batch read by iterating over todo keys from 0 to user's <tweetcount> which is stored in the user record
 			String todoId = ("newuser:" + (todoCount + 1));
 			Key todoKey = new Key(defaultNamespace, todoSet, todoId);
 			Bin todoKeyBin = new Bin("k", todoId);
@@ -87,6 +88,7 @@ public class Application extends Controller {
 		} catch (Exception e) {
 	      return ok(index.render(false,"Exception: " + e.toString(),null));
 		} 
+		//	Redirect the user to home/index/default route which will automatically refresh/reload the To-Dos
     return redirect("/");
   }
 
@@ -112,6 +114,7 @@ public class Application extends Controller {
 		} catch (Exception e) {
 	      return ok(index.render(false,"Exception: " + e.toString(),null));
 		} 
+		//	Redirect the user to home/index/default route which will automatically refresh/reload the To-Dos
     return redirect("/");
   }
 

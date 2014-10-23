@@ -1,24 +1,24 @@
 To-Do App
 =========
 
-This (Yet Another) To-Do web application is written using **Play Web Framework, Java, Scala and Aerospike.**
+This (Yet Another) To-Do web application is written using **[Play Web Framework](https://www.playframework.com), Java, Scala and Aerospike.**
 
 The code is easy to follow and substantial enough to be a foundation in learning how to leverage Aerospike's technology along with other technologies and the app may also be used as a "seed" application that you can expand.
 
-### Application Features
+### App Features
 
   * Create To-Dos
   * Batch Read and Display To-Dos
   * Delete To-Dos
 
-### Aerospike APIs Used
+### Aerospike Client APIs Used
 
-  * **connect** - For establishing connection to the Aerospike Cluster. This is done **once when the app starts.** See custom Play plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
+  * **connect** - For establishing connection to the Aerospike Cluster. This is **done once when the app starts.** See custom Play Plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
   * **get** - For single-record Read and multiple-records Batch Read operations
   * **put** - For Write operations
-  * **close** - For closing connection to the Aerospike Cluster. This is done **once when the app terminates.** See custom Play plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
+  * **close** - For closing connection to the Aerospike Cluster. This is **done once when the app terminates.** See custom Play Plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
 
-Note: To learn more about Play Plugins, [click here](https://www.playframework.com/documentation/2.3.x/JavaPlugins)
+Note: To learn more about writing Play Plugins, [click here](https://www.playframework.com/documentation/2.3.x/JavaPlugins)
 
 ## Get Up and Running
 
