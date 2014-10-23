@@ -14,7 +14,7 @@ The code is easy to follow and substantial enough to be a foundation in learning
 ### Aerospike APIs Used
 
   * **connect** - For establishing connection to the Aerospike Cluster. This is done **once when the app starts.** See custom Play plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
-  * **get** - For single-record Read and Batch Read operations
+  * **get** - For single-record Read and multiple-records Batch Read operations
   * **put** - For Write operations
   * **close** - For closing connection to the Aerospike Cluster. This is done **once when the app terminates.** See custom Play plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
 
@@ -27,13 +27,13 @@ Note: To learn more about Play Plugins, [click here](https://www.playframework.c
 - [Aerospike Server](http://www.aerospike.com/download/server/latest) – The server should be running and accessible from this app.
 - [Typesafe Activator](http://typesafe.com/platform/getstarted) - It is used to build and run the application.
 
-**Note:** [Aerospike Java Client 3.0.30](https://github.com/aerospike/play-scala-java-aerospike-app/tree/master/lib) comes bundled with this app. If you'd like to use the latest version, [click here](http://www.aerospike.com/download/client/java/latest/) to download it. Then, be sure to replace it in *//lib* folder.
+**Note:** [Aerospike Java Client 3.0.30](https://github.com/aerospike/play-scala-java-aerospike-app/tree/master/lib) comes bundled with this app. If you'd like to use the latest version, [click here](http://www.aerospike.com/download/client/java/latest/) to download it. Then, be sure to replace it in */lib* folder.
 
 ### Usage
 
 #### Config
 
-In [conf/application.conf](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/conf/application.conf), update **aerospike.cluster.ip** and **aerospike.cluster.port** under *Aerospike Cluster Configuration* section such that it points to your server running Aerospike Server.
+In [conf/application.conf](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/conf/application.conf), update **aerospike.cluster.ip** and **aerospike.cluster.port** under *Aerospike Cluster Configuration* section such that they point to your server running Aerospike Server.
 
 #### Build and Run
 
