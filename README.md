@@ -10,6 +10,12 @@ The code is easy to follow and substantial enough to be a foundation in learning
   * Create To-Dos
   * Delete To-Dos
 
+### Aerospike APIs Used
+
+  * 
+  * Delete To-Dos
+
+
 ## Get up and running
 
 ### Prerequisite
@@ -23,12 +29,16 @@ The code is easy to follow and substantial enough to be a foundation in learning
 
 #### Config
 
-In [conf/application.conf](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/conf/application.conf), update **aerospike.cluster.ip** and **aerospike.cluster.port** such that it points to your server running Aerospike Server.
+In [conf/application.conf](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/conf/application.conf), update **aerospike.cluster.ip** and **aerospike.cluster.port** under *Aerospike Cluster Configuration* section such that it points to your server running Aerospike Server.
 
 #### Build and Run
 
-To build and run the application, run command: **activator run** from application's root folder.
+To build and run the application, run command **activator run** from application's root folder.
 
 If all is well, open web browser and point it to: [http://localhost:9000](http://localhost:9000)
+
+You should see:
+
+<img src="https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/public/images/app.png"/>
 
 If you see **Oops! Connection to Aerospike cluster failed! Please check your Aerospike IP and Port settings in application.conf**, please make sure your Aerospike Server is running and available. Also confirm that **aerospike.cluster.ip** and **aerospike.cluster.port** are set correctly as described above in the Config section.
