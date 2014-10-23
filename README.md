@@ -1,7 +1,7 @@
 To-Do App
 =========
 
-This To-Do web application is written using **Play Web Framework, Java, Scala and Aerospike.**
+This (Yet Another) To-Do web application is written using **Play Web Framework, Java, Scala and Aerospike.**
 
 The code is easy to follow and substantial enough to be a foundation in learning how to leverage Aerospike's technology along with other technologies and the app may also be used as a "seed" application that you can expand.
 
@@ -13,21 +13,21 @@ The code is easy to follow and substantial enough to be a foundation in learning
 
 ### Aerospike APIs Used
 
-  * connect - For establishing connection to the Aerospike Cluster. This is done once when the app starts. See custom Play plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
-  * get - For single-record Read and Batch Read operations
-  * put - For Write operations
-  * close - For closing connection to the Aerospike Cluster. This is done once when the app terminates. See custom Play plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
+  * **connect** - For establishing connection to the Aerospike Cluster. This is done **once when the app starts.** See custom Play plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
+  * **get** - For single-record Read and Batch Read operations
+  * **put** - For Write operations
+  * **close** - For closing connection to the Aerospike Cluster. This is done **once when the app terminates.** See custom Play plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
 
 Note: To learn more about Play Plugins, [click here](https://www.playframework.com/documentation/2.3.x/JavaPlugins)
 
-## Get up and running
+## Get Up and Running
 
-### Prerequisite
+### Prerequisites
 
 - [Aerospike Server](http://www.aerospike.com/download/server/latest) – The server should be running and accessible from this app.
 - [Typesafe Activator](http://typesafe.com/platform/getstarted) - It is used to build and run the application.
 
-**Note:** [Aerospike Java Client 3.0.30](https://github.com/aerospike/play-scala-java-aerospike-app/tree/master/lib) comes bundled with this app. If you'd like to use the latest version, [click here](http://www.aerospike.com/download/client/java/latest/) to download it.
+**Note:** [Aerospike Java Client 3.0.30](https://github.com/aerospike/play-scala-java-aerospike-app/tree/master/lib) comes bundled with this app. If you'd like to use the latest version, [click here](http://www.aerospike.com/download/client/java/latest/) to download it. Then, be sure to replace it in *//lib* folder.
 
 ### Usage
 
