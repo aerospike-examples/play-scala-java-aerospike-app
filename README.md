@@ -8,13 +8,17 @@ The code is easy to follow and substantial enough to be a foundation in learning
 ### Application Features
 
   * Create To-Dos
+  * Batch Read and Display To-Dos
   * Delete To-Dos
 
 ### Aerospike APIs Used
 
-  * 
-  * Delete To-Dos
+  * connect - For establishing connection to the Aerospike Cluster. This is done once when the app starts. See custom Play plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
+  * get - For single-record Read and Batch Read operations
+  * put - For Write operations
+  * close - For closing connection to the Aerospike Cluster. This is done once when the app terminates. See custom Play plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
 
+Note: To learn more about Play Plugins, [click here](https://www.playframework.com/documentation/2.3.x/JavaPlugins)
 
 ## Get up and running
 
@@ -41,4 +45,4 @@ You should see:
 
 <img src="https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/public/images/app.png"/>
 
-If you see **Oops! Connection to Aerospike cluster failed! Please check your Aerospike IP and Port settings in application.conf**, please make sure your Aerospike Server is running and available. Also confirm that **aerospike.cluster.ip** and **aerospike.cluster.port** are set correctly as described above in the Config section.
+If you see **Oops! Connection to Aerospike cluster failed! Please check your Aerospike IP and Port settings in application.conf**, please make sure your Aerospike Server is running and available to this app. Also confirm that **aerospike.cluster.ip** and **aerospike.cluster.port** are set correctly as described above in the Config section.

@@ -40,7 +40,7 @@ Seq[Any](format.raw/*3.32*/("""
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
     <link rel="stylesheet" media="screen" href=""""),_display_(/*16.50*/routes/*16.56*/.Assets.at("stylesheets/main.css")),format.raw/*16.90*/("""">
-    <link rel="shortcut icon" type="image/png" href=""""),_display_(/*17.55*/routes/*17.61*/.Assets.at("images/favicon.png")),format.raw/*17.93*/("""">
+    <link rel="shortcut icon" href="http://www.aerospike.com/wp-content/uploads/2012/08/favicon.png" type="image/x-icon" />
     <script src=""""),_display_(/*18.19*/routes/*18.25*/.Assets.at("javascripts/main.js")),format.raw/*18.58*/("""" type="text/javascript"></script>
   </head>
   <body>
@@ -65,11 +65,11 @@ Seq[Any](format.raw/*3.32*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Tue Oct 21 14:19:30 PDT 2014
+                  DATE: Thu Oct 23 13:04:33 PDT 2014
                   SOURCE: /Users/dash/Apps/play/play-scala-java-aerospike-app/app/views/main.scala.html
-                  HASH: e18d1ea38409b235be26cd88c720aa38f1c26f2f
-                  MATRIX: 742->19|860->49|888->51|959->96|984->101|1361->451|1376->457|1431->491|1515->548|1530->554|1583->586|1631->607|1646->613|1700->646|1982->902|2010->909|2042->914
-                  LINES: 26->3|29->3|31->5|35->9|35->9|42->16|42->16|42->16|43->17|43->17|43->17|44->18|44->18|44->18|52->26|52->26|53->27
+                  HASH: 48e7f470f1e0279d755b051c09057b6a9e48bb1b
+                  MATRIX: 742->19|860->49|888->51|959->96|984->101|1361->451|1376->457|1431->491|1603->636|1618->642|1672->675|1954->931|1982->938|2014->943
+                  LINES: 26->3|29->3|31->5|35->9|35->9|42->16|42->16|42->16|44->18|44->18|44->18|52->26|52->26|53->27
                   -- GENERATED --
               */
           
