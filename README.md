@@ -14,8 +14,8 @@ The code is easy to follow and substantial enough to be a foundation in learning
 ### Aerospike Java Client APIs Used
 
   * **connect** - For establishing connection to the Aerospike Cluster. This is **done once when the app starts.** See custom Play Plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
-  * **get** - For single-record Read and multiple-records Batch Read operations
-  * **put** - For Write operations
+  * **get** - For single-record and multiple-records read operations
+  * **put** - For write operations
   * **close** - For closing connection to the Aerospike Cluster. This is **done once when the app terminates.** See custom Play Plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
 
 Note: To learn more about writing Play Plugins, [click here](https://www.playframework.com/documentation/2.3.x/JavaPlugins).
