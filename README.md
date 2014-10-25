@@ -47,4 +47,6 @@ You should see:
 
 If you see **Oops! Connection to Aerospike cluster failed! Please check your Aerospike IP and Port settings in application.conf**, please make sure your Aerospike Server is running and available to this app. Also confirm that **aerospike.cluster.ip** and **aerospike.cluster.port** are set correctly as described above in the Config section.
 
+### Learn More
+
 To learn more about code snippets from this app, [visit this blog](http://www.iamontheinet.com/2014/10/24/simple-to-do-web-app-using-java-aerospike-play-and-scala/).
