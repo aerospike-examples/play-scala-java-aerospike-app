@@ -1,7 +1,7 @@
-To-Do App
-=========
+To-Do Web App
+=============
 
-This (Yet Another) To-Do web application is written using **[Play Web Framework](https://www.playframework.com), Java, Scala and Aerospike.**
+This (Yet Another) To-Do web application is written using **Play Web Framework, Java, Scala and Aerospike.**
 
 The code is easy to follow and substantial enough to be a foundation in learning how to leverage Aerospike's technology in writing modern applications along with other popular technologies. This app may also be used as a "seed" application that you can expand.
 
@@ -11,7 +11,7 @@ The code is easy to follow and substantial enough to be a foundation in learning
   * Batch Read and Display To-Dos
   * Delete To-Dos
 
-### Aerospike Client APIs Used
+### Aerospike Java Client APIs Used
 
   * **connect** - For establishing connection to the Aerospike Cluster. This is **done once when the app starts.** See custom Play Plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
   * **get** - For single-record Read and multiple-records Batch Read operations
@@ -27,7 +27,7 @@ Note: To learn more about writing Play Plugins, [click here](https://www.playfra
 - [Aerospike Server](http://www.aerospike.com/download/server/latest) – The server should be running and accessible from this app.
 - [Typesafe Activator](http://typesafe.com/platform/getstarted) - It is used to build and run the application.
 
-**Note:** [Aerospike Java Client 3.0.30](https://github.com/aerospike/play-scala-java-aerospike-app/tree/master/lib) comes bundled with this app. If you'd like to use the latest version, [click here](http://www.aerospike.com/download/client/java/latest/) to download it. Then, be sure to replace it in */lib* folder.
+**Note:** [Aerospike Java Client 3.0.30](https://github.com/aerospike/play-scala-java-aerospike-app/tree/master/lib) comes bundled with this app. If you'd like to use the latest version, [click here](http://www.aerospike.com/download/client/java/latest/) to download it. Then, be sure to replace the jar in */lib* folder.
 
 ### Usage
 
