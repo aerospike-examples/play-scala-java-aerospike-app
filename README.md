@@ -1,7 +1,7 @@
 To-Do Web App
 =============
 
-This (Yet Another) To-Do web application is written using **Play Web Framework, Java, Scala and Aerospike.**
+This (Yet Another) To-Do web application is written using **Play Framework, Java, Scala and Aerospike.**
 
 The code is easy to follow and substantial enough to be a foundation in learning how to leverage Aerospike's technology in writing modern applications along with other popular technologies. This app may also be used as a "seed" application that you can expand.
 
