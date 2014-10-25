@@ -67,13 +67,13 @@ public class Application extends Controller {
 			Map<String, String[]> values = request().body().asFormUrlEncoded();
 		  String todo = values.get("todo")[0];
 
-			// Get how many todos the user has; NOTE: for simplicity, this is a single-user app so the user id is hardcoded to 'newuser'
+			//	Get how many todos the user has; NOTE: for simplicity, this is a single-user app so the user id is hardcoded to 'newuser'
 			Key userKey = new Key(defaultNamespace, userSet, "newuser");
 			Record userRecord = client.get(null, userKey);
 			int todoCount = (Integer) userRecord.getValue("todocount");
 
 			//	Create new To-Do
-			// NOTE: the todoId is format <newuser>:# so that we can initiate batch read by iterating over todo keys from 0 to user's <tweetcount> which is stored in the user record
+			//	NOTE: the todoId is in format <newuser>:# so that we can initiate batch read by iterating over todo keys from 0 to user's <tweetcount> which is stored in the user record
 			String todoId = ("newuser:" + (todoCount + 1));
 			Key todoKey = new Key(defaultNamespace, todoSet, todoId);
 			Bin todoKeyBin = new Bin("k", todoId);
@@ -101,7 +101,7 @@ public class Application extends Controller {
 			Map<String, String[]> values = request().body().asFormUrlEncoded();
 	    String todoId = values.get("todoKey")[0];
 
-			// Get how many todos the user has; NOTE: for simplicity, this is a single-user app so the user key is hardcoded
+			//	Get how many todos the user has; NOTE: for simplicity, this is a single-user app so the user key is hardcoded
 			Key userKey = new Key(defaultNamespace, userSet, "newuser");
 			Record userRecord = client.get(null, userKey);
 			int todoCount = (Integer) userRecord.getValue("todocount");

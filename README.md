@@ -18,7 +18,7 @@ The code is easy to follow and substantial enough to be a foundation in learning
   * **put** - For Write operations
   * **close** - For closing connection to the Aerospike Cluster. This is **done once when the app terminates.** See custom Play Plugin* [ASPlugin](https://github.com/aerospike/play-scala-java-aerospike-app/blob/master/ASPlugin.java)
 
-Note: To learn more about writing Play Plugins, [click here](https://www.playframework.com/documentation/2.3.x/JavaPlugins)
+Note: To learn more about writing Play Plugins, [click here](https://www.playframework.com/documentation/2.3.x/JavaPlugins).
 
 ## Get Up and Running
 
@@ -39,7 +39,7 @@ In [conf/application.conf](https://github.com/aerospike/play-scala-java-aerospik
 
 To build and run the application, run command **activator run** from application's root folder.
 
-If all is well, open web browser and point it to: [http://localhost:9000](http://localhost:9000)
+If all is well, open web browser and point it to: [http://localhost:9000](http://localhost:9000).
 
 You should see:
 
