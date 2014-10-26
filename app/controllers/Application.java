@@ -9,16 +9,16 @@ import plugins.*;
 
 public class Application extends Controller {
 
-	private static final String defaultNamespace = "test";
-	private static final String todoSet = "todos";
-	private static final String userSet = "users";
-	private static final AerospikeClient client = Play.application().plugin(ASPlugin.class).getASClient();
+private static final String defaultNamespace = "test";
+private static final String todoSet = "todos";
+private static final String userSet = "users";
+private static final AerospikeClient client = Play.application().plugin(ASPlugin.class).getASClient();
 
-  public static Result index() {
-  	if (!client.isConnected())	{
-  		return ok(index.render(false,"Connection to Aerospike cluster failed! Please check your Aerospike IP and Port settings in application.conf",null));
-  	}
-  	try {
+	public static Result index() {
+		if (!client.isConnected())	{
+			return ok(index.render(false,"Connection to Aerospike cluster failed! Please check your Aerospike IP and Port settings in application.conf",null));
+		}
+		try {
 	  	Map<String, String> todos = new HashMap<String, String>();
 
 			// Get how many todos the user has; NOTE: for simplicity, this is a single-user app so the user id is hardcoded to 'newuser'
@@ -50,19 +50,19 @@ public class Application extends Controller {
 				Bin todoCountBin = new Bin("todocount", 0);
 				client.put(null, userKey, todoCountBin);
 			}
-      return ok(index.render(true,"ok",todos));
+	    return ok(index.render(true,"ok",todos));
 		} catch (AerospikeException e) {
-      return ok(index.render(false,"AerospikeException: " + e.toString(),null));
+	    return ok(index.render(false,"AerospikeException: " + e.toString(),null));
 		} catch (Exception e) {
-      return ok(index.render(false,"Exception: " + e.toString(),null));
+	    return ok(index.render(false,"Exception: " + e.toString(),null));
 		} 
-  }
+	}
 
-  public static Result createTodo() {
-  	if (!client.isConnected())	{
-  		return ok(index.render(false,"Connection to Aerospike cluster failed! Please check your Aerospike IP and Port settings in application.conf",null));
-  	}
-  	try {
+	public static Result createTodo() {
+		if (!client.isConnected())	{
+			return ok(index.render(false,"Connection to Aerospike cluster failed! Please check your Aerospike IP and Port settings in application.conf",null));
+		}
+		try {
 	  	//	Read To-Do entered in the form
 			Map<String, String[]> values = request().body().asFormUrlEncoded();
 		  String todo = values.get("todo")[0];
@@ -89,14 +89,14 @@ public class Application extends Controller {
 	      return ok(index.render(false,"Exception: " + e.toString(),null));
 		} 
 		//	Redirect the user to home/index/default route which will automatically refresh/reload the To-Dos
-    return redirect("/");
-  }
+	  return redirect("/");
+	}
 
-  public static Result deleteTodo() {
-  	if (!client.isConnected())	{
-  		return ok(index.render(false,"Connection to Aerospike cluster failed! Please check your Aerospike IP and Port settings in application.conf",null));
-  	}
-  	try {
+	public static Result deleteTodo() {
+		if (!client.isConnected())	{
+			return ok(index.render(false,"Connection to Aerospike cluster failed! Please check your Aerospike IP and Port settings in application.conf",null));
+		}
+		try {
 	  	//	Read To-Do key passed in the form as hidden field
 			Map<String, String[]> values = request().body().asFormUrlEncoded();
 	    String todoId = values.get("todoKey")[0];
@@ -115,7 +115,7 @@ public class Application extends Controller {
 	      return ok(index.render(false,"Exception: " + e.toString(),null));
 		} 
 		//	Redirect the user to home/index/default route which will automatically refresh/reload the To-Dos
-    return redirect("/");
-  }
+	  return redirect("/");
+	}
 
 }
