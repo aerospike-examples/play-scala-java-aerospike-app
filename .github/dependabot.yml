@@ -1,0 +1,66 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/amdefine
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/coffee-script
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/console-browserify
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/debug
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/diff
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/jshint
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/less
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/mkdirp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/mocha
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/npm
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/requirejs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/source-map
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /project/target/node-modules/webjars/underscore
+    schedule:
+      interval: daily
